@@ -1,4 +1,4 @@
-package org.csystem.homework.solution;
+package org.csystem.homework.solution.homework1;
 
 import org.csystem.homework.solution.homework1.NumberSort;
 import org.csystem.homework.solution.homework1.NumberUtil;
