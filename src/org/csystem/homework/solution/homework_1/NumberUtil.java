@@ -1,4 +1,4 @@
-package org.csystem.homework.solution.homework1;
+package org.csystem.homework.solution.homework_1;
 
 public class NumberUtil {
     public static int mid(int a, int b, int c) {

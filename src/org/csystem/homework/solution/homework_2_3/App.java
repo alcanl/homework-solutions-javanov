@@ -1,4 +1,4 @@
-package org.csystem.homework.solution.homework2;
+package org.csystem.homework.solution.homework_2_3;
 
 class App {
     public static void main(String[] args) {

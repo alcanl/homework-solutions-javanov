@@ -1,4 +1,4 @@
-package org.csystem.homework.solution.homework1;
+package org.csystem.homework.solution.homework_1;
 
 public class NumberSort {
     public static void findNums(int a, int b, int c) {
