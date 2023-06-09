@@ -38,9 +38,9 @@ package org.csystem.homework.solution.datetime;
 public class Date {
     private int m_day;
     private int m_month;
+    private int m_year;
     private static final Month [] MONTH_INDEXES = Month.values();
     private static final DayOfWeek [] DAY_OF_WEEK_INDEXES = DayOfWeek.values();
-    private int m_year;
     private static boolean isValidDate(int day, int month, int year)
     {
         return 1 <= day && day <= 31 && 1 <= month && month <= 12 && day <= getMonth(month).getDays(year);
