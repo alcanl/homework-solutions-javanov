@@ -22,7 +22,7 @@ public enum Month {
 		m_monthEN = monthEN;
 		m_monthTR = monthTR;
 	}
-	private static boolean isLeapYear(int year)
+	public static boolean isLeapYear(int year)
 	{
 		return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
 	}

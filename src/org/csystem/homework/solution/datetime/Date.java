@@ -52,10 +52,6 @@ public class Date {
     {
         return 1 <= day && day <= 31 && 1 <= month && month <= 12 && day <= getMonth(month).getDays(year);
     }
-    private static boolean isLeapYear(int year)
-    {
-        return year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
-    }
     private static Month getMonth(int n)
     {
         return MONTH_INDEXES[n - 1];
@@ -74,7 +70,7 @@ public class Date {
         int totalDays = 0;
 
         for (int y = 1900; y < m_year; ++y)
-            totalDays += isLeapYear(y) ? 366 : 365;
+            totalDays += Month.isLeapYear(y) ? 366 : 365;
 
         return totalDays;
     }
@@ -147,7 +143,7 @@ public class Date {
     }
     public boolean isLeapYear()
     {
-        return isLeapYear(m_year);
+        return Month.isLeapYear(m_year);
     }
     public boolean isWeekDay()
     {
