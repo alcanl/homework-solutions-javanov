@@ -41,6 +41,13 @@ public class Date {
     private int m_year;
     private static final Month [] MONTH_INDEXES = Month.values();
     private static final DayOfWeek [] DAY_OF_WEEK_INDEXES = DayOfWeek.values();
+    private static void checkDate(int day, int month, int year)
+    {
+        if (!isValidDate(day, month, year)) {
+            System.out.println("Invalid Date!");
+            System.exit(0);
+        }
+    }
     private static boolean isValidDate(int day, int month, int year)
     {
         return 1 <= day && day <= 31 && 1 <= month && month <= 12 && day <= getMonth(month).getDays(year);
@@ -82,16 +89,11 @@ public class Date {
     }
     public Date(int day, int monthValue, int year)
     {
-        if (!isValidDate(day, monthValue, year)) {
-            System.out.println("Invalid Date!");
-            System.exit(0);
-        }
+        checkDate(day, monthValue, year);
         m_day = day;
         m_month = monthValue;
-
         m_year = year;
     }
-
     public Date(int day, Month month, int year)
     {
         this(day, month.ordinal() + 1, year);
@@ -100,27 +102,18 @@ public class Date {
     {
         return m_day;
     }
-
     public void setDay(int day)
     {
-        if (!isValidDate(day, m_month, m_year)) {
-            System.out.println("Invalid Date!");
-            System.exit(0);
-        }
+        checkDate(day, m_month, m_year);
         m_day = day;
     }
-
     public int getMonthValue()
     {
         return m_month;
     }
-
     public void setMonthValue(int monthValue)
     {
-        if (!isValidDate(m_day, monthValue, m_year)) {
-            System.out.println("Invalid Date!");
-            System.exit(0);
-        }
+        checkDate(m_day, monthValue, m_year);
         m_month = monthValue;
     }
     public Month getMonth()
@@ -137,10 +130,7 @@ public class Date {
     }
     public void setYear(int year)
     {
-        if (!isValidDate(m_day, m_month, year)) {
-            System.out.println("Invalid Date!");
-            System.exit(0);
-        }
+        checkDate(m_day, m_month, year);
         m_year = year;
     }
     public DayOfWeek getDayOfWeek()
