@@ -8,7 +8,7 @@
 	Copyleft (c) 1993 C and System Programmers Association
 	All Rights Free
 ----------------------------------------------------------------*/
-package org.csystem.math;
+package org.csystem.homework.solution.fraction_class;
 
 import static java.lang.Math.max;
 import static java.lang.Math.min;

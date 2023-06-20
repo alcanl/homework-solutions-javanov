@@ -1,6 +1,7 @@
 package org.csystem.homework.solution.homework_12;
 import static java.lang.Math.*;
-import org.csystem.util.ArrayUtil;
+import org.csystem.util.array.ArrayUtil;
+
 public class App {
     public static double standartDeviation(int [] a)
     {

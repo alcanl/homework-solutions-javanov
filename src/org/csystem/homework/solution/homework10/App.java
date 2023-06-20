@@ -1,5 +1,7 @@
 package org.csystem.homework.solution.homework10;
 
+import static org.csystem.util.numeric.NumberUtil.getDigits;
+
 public class App {
 
     public static boolean isPossible(int val1, int val2)

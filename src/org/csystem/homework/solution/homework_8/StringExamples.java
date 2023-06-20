@@ -1,4 +1,7 @@
 package org.csystem.homework.solution.homework_8;
+
+import org.csystem.util.string.StringUtil;
+
 class StringExamples {
     public String str;
 

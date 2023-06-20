@@ -2,6 +2,7 @@ package org.csystem.homework.solution.homework_9;
 
 import java.util.Random;
 import java.util.Scanner;
+
 import static org.csystem.util.numeric.NumberUtil.getDigits;
 
 public class MasterMindApp {
@@ -11,13 +12,13 @@ public class MasterMindApp {
     public int countWrongLocation;
     public static Random r;
     public static Scanner kb;
-    public MastermindApp(Random generator, Scanner keyboard)
+    public MasterMindApp(Random generator, Scanner keyboard)
     {
         r = generator;
         kb = keyboard;
-        new MastermindApp();
+        new MasterMindApp();
     }
-    public MastermindApp()
+    public MasterMindApp()
     {
         r = new Random();
         kb = new Scanner(System.in);

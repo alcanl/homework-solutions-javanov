@@ -3,7 +3,7 @@ package org.csystem.homework.solution.homework_14;
 import java.util.Arrays;
 import java.util.Scanner;
 
-import static org.csystem.util.matrix.MatrixUtil.transposed;
+import static org.csystem.util.matrix.MatrixUtil.transpose;
 
 public class Sudoku {
     private final int[][] m_sdm;
@@ -28,7 +28,7 @@ public class Sudoku {
     }
     private static boolean isValidCols(int [][] arr)
     {
-        return isValidRows(transposed(arr));
+        return isValidRows(transpose(arr));
     }
     private static boolean isValidRows(int [][] arr)
     {
