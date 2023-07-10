@@ -17,7 +17,7 @@ public class ArrayListExam {
         arrayList.addAll(Arrays.asList(str));
         ms_arrayList.add(arrayList);
     }
-    private void printArrayList()
+    private void displayList()
     {
         System.out.println("<Names>");
         for (var arr : ms_arrayList) {
@@ -43,6 +43,6 @@ public class ArrayListExam {
 
             fillArrayList(splitLine(s), new ArrayList<>());
         }
-        printArrayList();
+        displayList();
     }
 }
