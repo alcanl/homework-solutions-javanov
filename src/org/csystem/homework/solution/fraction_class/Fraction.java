@@ -84,14 +84,10 @@ public class Fraction {
 
     public void setDenominator(int val)
     {
-        if (m_a != 0 && val == 0) {
-            System.out.println("Undefined fraction!");
-            System.exit(0);
-        }
-        if (m_a == 0 && val == 0) {
-            System.out.println("Undetermined fraction!");
-            System.exit(0);
-        }
+        if (m_a != 0 && val == 0)
+	    throw new IllegalArgumentException("Undefined Fraction");
+        if (m_a == 0 && val == 0) 
+	    throw new IllegalArgumentException("Undetermined Fraction");
         if (val < 0) {
             m_a = -m_a;
             m_b = -val;
@@ -149,13 +145,11 @@ public class Fraction {
     public void inc()
     {
         m_a += m_a * m_b;
-        simplifyFraction();
     }
 
     public void dec()
     {
         m_a -= m_a * m_b;
-        simplifyFraction();
     }
 
     public int compareTo(Fraction other)
