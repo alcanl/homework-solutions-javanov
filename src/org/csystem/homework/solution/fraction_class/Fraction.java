@@ -38,7 +38,7 @@ public class Fraction {
     }
     private void simplifyFraction()
     {
-        int min = min(m_a, m_b);
+        int min = min(Math.abs(m_a), m_b);
 
         for (int i = min; i >= 1; --i)
             if (m_a % i == 0 && m_b % i == 0) {
