@@ -1,4 +1,4 @@
-package patika.homework;
+package patika.homework.mylist;
 
 import java.util.Arrays;
 

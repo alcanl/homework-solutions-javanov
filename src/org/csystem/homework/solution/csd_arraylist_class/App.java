@@ -1,5 +1,4 @@
 package org.csystem.homework.solution.csd_arraylist_class;
-import patika.homework.MyList;
 
 import java.util.Random;
 
